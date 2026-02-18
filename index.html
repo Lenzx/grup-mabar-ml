@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Grup Mabar ML</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: url('https://i.pinimg.com/originals/xx/xx/xx/xxx.jpg') no-repeat center center/cover;
+    color: white;
+    text-align: center;
+}
+
+.overlay {
+    background: rgba(0,0,0,0.75);
+    min-height: 100vh;
+    padding: 40px;
+}
+
+h1 {
+    font-size: 45px;
+    color: cyan;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.anime-box {
+    margin: 30px auto;
+    width: 250px;
+    animation: float 3s ease-in-out infinite;
+}
+
+.anime-box img {
+    width: 100%;
+    border-radius: 20px;
+    box-shadow: 0 0 20px cyan;
+}
+
+.content {
+    max-width: 700px;
+    margin: auto;
+    background: rgba(255,255,255,0.1);
+    padding: 25px;
+    border-radius: 20px;
+    animation: slideUp 2s ease;
+}
+
+.join-btn {
+    display: inline-block;
+    padding: 12px 25px;
+    border-radius: 10px;
+    background: orange;
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    transition: 0.3s;
+    margin-top: 15px;
+}
+
+.join-btn:hover {
+    background: darkorange;
+    transform: scale(1.1);
+}
+
+.contact {
+    margin-top: 25px;
+    font-size: 18px;
+    color: yellow;
+    font-weight: bold;
+    text-shadow: 0 0 10px orange;
+    animation: blink 1.5s infinite;
+}
+
+/* Animasi */
+@keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+@keyframes slideUp {
+    from {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes float {
+    0% {transform: translateY(0);}
+    50% {transform: translateY(-15px);}
+    100% {transform: translateY(0);}
+}
+
+@keyframes blink {
+    0% {opacity: 1;}
+    50% {opacity: 0.5;}
+    100% {opacity: 1;}
+}
+</style>
+</head>
+
+<body>
+
+<div class="overlay">
+
+    <h1>🔥 GRUP MABAR MOBILE LEGENDS 🔥</h1>
+
+    <div class="anime-box">
+        <img src="anime.jpg" alt="Anime">
+    </div>
+
+    <div class="content">
+        <h2>Tentang Mobile Legends</h2>
+        <p>
+            Mobile Legends adalah game MOBA 5v5 yang seru untuk push rank bareng teman.
+        </p>
+        <p>
+            Role tersedia: Tank, Mage, Assassin, Marksman, dan Support.
+            Main bareng grup bikin pengalaman lebih seru!
+        </p>
+
+        <!-- Tombol menuju link grup WhatsApp -->
+        <a href="https://chat.whatsapp.com/EzB23AO8Wrr2YgKLJWGSiM?mode=gi_t" target="_blank" class="join-btn">
+            🚀 Join Sekarang
+        </a>
+
+        <!-- Teks admin -->
+        <div class="contact">
+            📞 Jika ingin bergabung hubungi admin: 08978527500
+        </div>
+
+    </div>
+
+</div>
+</body>
+  </html>
+  
