@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Grup Mabar ML</title>
+<title>Grup Mabar ML - Custom Background</title>
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -12,64 +12,63 @@
 <style>
 body {
     margin: 0;
-    /* Font diganti ke Orbitron agar lebih gaya gaming */
     font-family: 'Orbitron', sans-serif;
-    /* Menggunakan link gambar Gojo Satoru */
-    background: url('https://w0.peakpx.com/wallpaper/931/157/HD-wallpaper-gojo-satoru-jujutsu-kaisen-anime.jpg') no-repeat center center fixed;
-;
+    /* Ganti background menjadi file lokal anime2.jpg */
+    background: url('anime2.jpg') no-repeat center center fixed;
     background-size: cover;
     color: white;
     text-align: center;
 }
 
 .overlay {
-    /* Overlay sedikit lebih gelap agar tulisan putih & cyan lebih kontras */
+    /* Overlay sedikit gelap agar teks tetap jelas terbaca di atas gambar */
     background: rgba(0,0,0,0.6);
     min-height: 100vh;
-    padding: 40px;
+    padding: 40px 20px;
     box-sizing: border-box;
 }
 
 h1 {
-    font-size: 40px;
+    font-size: 35px;
     color: cyan;
     text-shadow: 0 0 15px cyan;
     animation: fadeIn 2s ease-in-out;
-    margin-bottom: 10px;
+    margin-top: 0;
 }
 
 .anime-box {
     margin: 20px auto;
-    width: 250px;
+    width: 200px;
     animation: float 3s ease-in-out infinite;
 }
 
 .anime-box img {
     width: 100%;
-    border-radius: 20px;
-    box-shadow: 0 0 25px cyan;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 0 0 20px cyan;
     border: 2px solid rgba(0, 255, 255, 0.5);
 }
 
 .content {
     max-width: 600px;
     margin: auto;
-    /* Background box dibuat agak transparan gelap */
-    background: rgba(0, 0, 0, 0.7);
-    padding: 30px;
+    background: rgba(0, 0, 0, 0.75);
+    padding: 25px;
     border-radius: 20px;
-    border: 1px solid rgba(255, 255, 255, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.1);
     animation: slideUp 2s ease;
 }
 
 h2 {
     color: #00ffcc;
+    font-size: 22px;
 }
 
 p {
     line-height: 1.6;
     font-size: 14px;
-    letter-spacing: 1px;
+    color: #e0e0e0;
 }
 
 .join-btn {
@@ -87,14 +86,13 @@ p {
 }
 
 .join-btn:hover {
-    background: linear-gradient(45deg, #ff4500, #ff8c00);
     transform: scale(1.1);
     box-shadow: 0 0 20px orange;
 }
 
 .contact {
     margin-top: 30px;
-    font-size: 16px;
+    font-size: 15px;
     color: #fbff00;
     font-weight: bold;
     text-shadow: 0 0 8px rgba(251, 255, 0, 0.5);
@@ -102,38 +100,25 @@ p {
 }
 
 /* Animasi */
-@keyframes fadeIn {
-    from {opacity: 0;}
-    to {opacity: 1;}
-}
-
+@keyframes fadeIn { from {opacity: 0;} to {opacity: 1;} }
 @keyframes slideUp {
-    from {
-        opacity: 0;
-        transform: translateY(40px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
+    from { opacity: 0; transform: translateY(40px); }
+    to { opacity: 1; transform: translateY(0); }
 }
-
 @keyframes float {
     0% {transform: translateY(0);}
-    50% {transform: translateY(-15px);}
+    50% {transform: translateY(-10px);}
     100% {transform: translateY(0);}
 }
-
 @keyframes blink {
-    0% {opacity: 1;}
+    0%, 100% {opacity: 1;}
     50% {opacity: 0.6;}
-    100% {opacity: 1;}
 }
 
-/* Responsif untuk HP */
-@media (max-width: 600px) {
-    h1 { font-size: 28px; }
-    .content { width: 90%; padding: 20px; }
+/* Responsif HP */
+@media (max-width: 480px) {
+    h1 { font-size: 24px; }
+    .anime-box { width: 150px; }
 }
 </style>
 </head>
@@ -145,7 +130,7 @@ p {
     <h1>🔥 GRUP MABAR MLBB 🔥</h1>
 
     <div class="anime-box">
-        <img src="https://i.redd.it/gojo-satoru-v0-sf7mcr3t7he81.jpg?width=640&crop=smart&auto=webp&s=f366e60b8655c65f02f90956903f8e56259d0473" alt="Gojo Satoru">
+        <img src="anime.jpg" alt="Anime Kecil">
     </div>
 
     <div class="content">
@@ -167,6 +152,7 @@ p {
     </div>
 
 </div>
+
 </body>
     </html>
     
