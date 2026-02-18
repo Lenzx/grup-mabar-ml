@@ -5,29 +5,40 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Grup Mabar ML</title>
 
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+
 <style>
 body {
     margin: 0;
-    font-family: Arial, sans-serif;
-    background: url('https://i.pinimg.com/originals/xx/xx/xx/xxx.jpg') no-repeat center center/cover;
+    /* Font diganti ke Orbitron agar lebih gaya gaming */
+    font-family: 'Orbitron', sans-serif;
+    /* Menggunakan link gambar Gojo Satoru */
+    background: url('https://i.redd.it/gojo-satoru-v0-sf7mcr3t7he81.jpg?width=1920&format=pjpg&auto=webp&s=6e03102464731a5401344697980486c0e5a6390a') no-repeat center center fixed;
+    background-size: cover;
     color: white;
     text-align: center;
 }
 
 .overlay {
-    background: rgba(0,0,0,0.75);
+    /* Overlay sedikit lebih gelap agar tulisan putih & cyan lebih kontras */
+    background: rgba(0,0,0,0.6);
     min-height: 100vh;
     padding: 40px;
+    box-sizing: border-box;
 }
 
 h1 {
-    font-size: 45px;
+    font-size: 40px;
     color: cyan;
+    text-shadow: 0 0 15px cyan;
     animation: fadeIn 2s ease-in-out;
+    margin-bottom: 10px;
 }
 
 .anime-box {
-    margin: 30px auto;
+    margin: 20px auto;
     width: 250px;
     animation: float 3s ease-in-out infinite;
 }
@@ -35,41 +46,57 @@ h1 {
 .anime-box img {
     width: 100%;
     border-radius: 20px;
-    box-shadow: 0 0 20px cyan;
+    box-shadow: 0 0 25px cyan;
+    border: 2px solid rgba(0, 255, 255, 0.5);
 }
 
 .content {
-    max-width: 700px;
+    max-width: 600px;
     margin: auto;
-    background: rgba(255,255,255,0.1);
-    padding: 25px;
+    /* Background box dibuat agak transparan gelap */
+    background: rgba(0, 0, 0, 0.7);
+    padding: 30px;
     border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
     animation: slideUp 2s ease;
+}
+
+h2 {
+    color: #00ffcc;
+}
+
+p {
+    line-height: 1.6;
+    font-size: 14px;
+    letter-spacing: 1px;
 }
 
 .join-btn {
     display: inline-block;
-    padding: 12px 25px;
-    border-radius: 10px;
-    background: orange;
+    padding: 15px 30px;
+    border-radius: 50px;
+    background: linear-gradient(45deg, #ff8c00, #ff4500);
     color: white;
     text-decoration: none;
-    font-size: 16px;
+    font-weight: bold;
+    font-size: 18px;
     transition: 0.3s;
-    margin-top: 15px;
+    margin-top: 20px;
+    box-shadow: 0 5px 15px rgba(255, 69, 0, 0.4);
 }
 
 .join-btn:hover {
-    background: darkorange;
+    background: linear-gradient(45deg, #ff4500, #ff8c00);
     transform: scale(1.1);
+    box-shadow: 0 0 20px orange;
 }
 
 .contact {
-    margin-top: 25px;
-    font-size: 18px;
-    color: yellow;
+    margin-top: 30px;
+    font-size: 16px;
+    color: #fbff00;
     font-weight: bold;
-    text-shadow: 0 0 10px orange;
+    text-shadow: 0 0 8px rgba(251, 255, 0, 0.5);
     animation: blink 1.5s infinite;
 }
 
@@ -98,8 +125,14 @@ h1 {
 
 @keyframes blink {
     0% {opacity: 1;}
-    50% {opacity: 0.5;}
+    50% {opacity: 0.6;}
     100% {opacity: 1;}
+}
+
+/* Responsif untuk HP */
+@media (max-width: 600px) {
+    h1 { font-size: 28px; }
+    .content { width: 90%; padding: 20px; }
 }
 </style>
 </head>
@@ -108,35 +141,31 @@ h1 {
 
 <div class="overlay">
 
-    <h1>🔥 GRUP MABAR MOBILE LEGENDS 🔥</h1>
+    <h1>🔥 GRUP MABAR MLBB 🔥</h1>
 
     <div class="anime-box">
-        <img src="anime.jpg" alt="Anime">
+        <img src="https://i.redd.it/gojo-satoru-v0-sf7mcr3t7he81.jpg?width=640&crop=smart&auto=webp&s=f366e60b8655c65f02f90956903f8e56259d0473" alt="Gojo Satoru">
     </div>
 
     <div class="content">
-        <h2>Tentang Mobile Legends</h2>
+        <h2>MABAR & PUSH RANK</h2>
         <p>
-            Mobile Legends adalah game MOBA 5v5 yang seru untuk push rank bareng teman.
+            Bosan solo rank ketemu tim beban? Yuk gabung bareng squad kita! 
         </p>
         <p>
-            Role tersedia: Tank, Mage, Assassin, Marksman, dan Support.
-            Main bareng grup bikin pengalaman lebih seru!
+            Open all role: 🛡️ Tank, 🧙 Mage, 🗡️ Assassin, 🏹 Marksman, 🆘 Support.
         </p>
 
-        <!-- Tombol menuju link grup WhatsApp -->
-        <a href="https://chat.whatsapp.com/EzB23AO8Wrr2YgKLJWGSiM?mode=gi_t" target="_blank" class="join-btn">
-            🚀 Join Sekarang
+        <a href="https://chat.whatsapp.com/EzB23AO8Wrr2YgKLJWGSiM" target="_blank" class="join-btn">
+            🚀 JOIN GRUP WA
         </a>
 
-        <!-- Teks admin -->
         <div class="contact">
-            📞 Jika ingin bergabung hubungi admin: 08978527500
+            📞 Admin: 08978527500
         </div>
-
     </div>
 
 </div>
 </body>
-  </html>
-  
+    </html>
+    
